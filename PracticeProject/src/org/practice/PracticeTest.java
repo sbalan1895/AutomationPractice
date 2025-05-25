@@ -27,6 +27,8 @@ public class PracticeTest {
 		String input = "Siva";
 
 		printNonRepetitiveCharacters(input);
+		
+		System.out.println("practice GIT");
 	}
 
 	public static void printNonRepetitiveCharacters(String input) {
