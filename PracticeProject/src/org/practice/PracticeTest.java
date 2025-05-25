@@ -26,7 +26,7 @@ public class PracticeTest {
 
 		String input = "Siva";
 
-//		printNonRepetitiveCharacters(input);
+		printNonRepetitiveCharacters(input);
 	}
 
 	public static void printNonRepetitiveCharacters(String input) {
