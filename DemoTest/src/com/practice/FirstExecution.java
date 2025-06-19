@@ -7,12 +7,7 @@ public class FirstExecution {
 
 	public static void main(String[] args) {
 		
-		
-		
-		}
-	}
-
-		/*String word = "SbalaN1895@gmail.com";
+		String word = "SbalaN1895@gmail.com";
 		int s = 0, cap = 0, num = 0, spl = 0;
 		String small = "", caps = "", digits = "", splChar = "";
 
