@@ -20,10 +20,10 @@ public class FirstExecution {
 			
 			map.put(in, map.getOrDefault(in, 0)+1);
 		}
-		System.out.println("repetative element");
+		System.out.println("Non-repetative element");
 		
 		for(Map.Entry<Integer, Integer> entry: map.entrySet()) {
-			if(entry.getValue()>1) {
+			if(entry.getValue()==1) {
 				System.out.println(entry.getKey());
 			}
 		}
