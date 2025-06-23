@@ -1,46 +1,111 @@
 package com.practice;
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class FirstExecution {
 
 	public static void main(String[] args) {
 		
-		String word = "SbalaN1895@gmail.com";
-		int s = 0, cap = 0, num = 0, spl = 0;
-		String small = "", caps = "", digits = "", splChar = "";
-
-		for (int i = 0; i < word.length(); i++) {
-
-			char charAt = word.charAt(i);
-
-			if (Character.isLowerCase(charAt)) {
-				s++;
-				small = small + charAt;
-			}
-
-			else if (Character.isUpperCase(charAt)) {
-				cap++;
-				caps = caps + charAt;
-			}
-
-			else if (Character.isDigit(charAt)) {
-				num++;
-				digits = digits + charAt;
-			}
-
-			else {
-				spl++;
-				splChar = splChar + charAt;
+		Integer array[]= {1,2,1,3,5,7,3};
+		
+		HashMap<Integer, Integer> map= new HashMap<>();
+		
+		for(Integer in:array ) {
+			
+			map.put(in, map.getOrDefault(in, 0)+1);
+		}
+		System.out.println("repetative element");
+		
+		for(Map.Entry<Integer, Integer> entry: map.entrySet()) {
+			if(entry.getValue()>1) {
+				System.out.println(entry.getKey());
 			}
 		}
-		System.out.println("small characters available in " + word + " are ----------" + small);
-		System.out.println("caps characters available in " + word + " are ----------" + caps);
-		System.out.println("number available in " + word + " are -----------" + digits);
-		System.out.println("SpecialCharacters available in " + word + " are -----------" + splChar);
+		
+		
+		}
 	}
-}
+	
+		
+		
+//		String word[]= {"AB","CD","DE","CD"};
+//		
+//		boolean flag= false;
+//		
+//		for (int i = 0; i < word.length; i++) {
+//			for (int j = i+1; j < word.length; j++) {
+//				
+//				if(word[i]==word[j]) {
+//					System.out.println(word[i]);
+//					flag=true;
+//					break;
+//				}
+//				
+//			}
+//			if(flag==false) {
+//				System.out.println("No repetative element found");
+////				break;
+//			}
+//			
+//		}
+//		
+//		}
+//	}
+		
+//		Set<Integer> set= new HashSet<>();
+//		set.add(20);
+//		set.add(40);
+//		set.add(55);
+//		set.add(10);
+//		set.add(33);
+//		set.add(12);
+//		
+//		System.out.println(set);
+//		
+//		
+//		}
+//	}
+		
+//		String word = "SbalaN1895@gmail.com";
+//		int s = 0, cap = 0, num = 0, spl = 0;
+//		String small = "", caps = "", digits = "", splChar = "";
+//
+//		for (int i = 0; i < word.length(); i++) {
+//
+//			char charAt = word.charAt(i);
+//
+//			if (Character.isLowerCase(charAt)) {
+//				s++;
+//				small = small + charAt;
+//			}
+//
+//			else if (Character.isUpperCase(charAt)) {
+//				cap++;
+//				caps = caps + charAt;
+//			}
+//
+//			else if (Character.isDigit(charAt)) {
+//				num++;
+//				digits = digits + charAt;
+//			}
+//
+//			else {
+//				spl++;
+//				splChar = splChar + charAt;
+//			}
+//		}
+//		System.out.println("small characters available in " + word + " are ----------" + small);
+//		System.out.println("caps characters available in " + word + " are ----------" + caps);
+//		System.out.println("number available in " + word + " are -----------" + digits);
+//		System.out.println("SpecialCharacters available in " + word + " are -----------" + splChar);
+//	}
+//}
 
 /*
  * String word = "SbalaN1895@gmail.com"; int s = 0, cap = 0, num = 0, spl = 0;
