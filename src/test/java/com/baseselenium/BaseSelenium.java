@@ -11,8 +11,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseSelenium {
 
 	public static WebDriver driver;
-	
-	public static Actions actions;
+
+		public static Actions actions;
 
 	@BeforeClass
 	public void loginSelenium() {
@@ -20,9 +20,10 @@ public class BaseSelenium {
 		WebDriverManager.chromedriver().setup();
 
 		driver= new ChromeDriver();
-				actions= new Actions(driver);
 
-		driver.get("https://www.tutorialspoint.com/selenium/practice/buttons.php");
+		//		actions= new Actions(driver);
+
+		driver.get("https://www.tutorialspoint.com/selenium/practice/browser-windows.php");
 		driver.manage().window().maximize();
 
 	}
