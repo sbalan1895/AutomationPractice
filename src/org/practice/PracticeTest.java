@@ -11,6 +11,7 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 //import java.util.Arrays;
 //import java.util.Collections;
@@ -24,26 +25,450 @@ public class PracticeTest {
 
 	public static void main(String[] args) {
 
-		int arr[]= {55, 78, 43, 84, 64, 31, 92};
+		String str= "sivasbi";
 
-		int min= arr[0];
+		for (int i = 0; i < str.length(); i++) {
 
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = i+1; j < arr.length; j++) {
+			char ch = str.charAt(i);
+			int count=0;
 
-				if(arr[i]> arr[j]) {
-					int temp= arr[i];
-					arr[i]= arr[j];
-					arr[j]= temp;
+			for (int j = 0; j < str.length(); j++) {
+
+				if(ch== str.charAt(j)) {
+					count++;
 				}
-
 			}
+			
+			if(count > 1) {
+				System.out.println("Repetative char are " +ch);
+			}
+
 		}
-		
-		System.out.println(arr[2]);
 
 	}
 }
+
+/*	String str= "sivasbi";
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char ch = str.charAt(i);
+			int count= 0;
+
+			if(str.indexOf(ch) != i) {
+				continue;
+			}
+
+			for (int j = 0; j < str.length(); j++) {
+
+				if(ch== str.charAt(j)) {
+					count++;
+				}
+
+			}
+
+			if(count == 1) {
+				System.out.println("Non-repetative char are " +ch);
+			}
+
+		}
+	}
+}
+
+/*	String str= "sivasbi";
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char ch = str.charAt(i);
+			int count= 0;
+
+			for (int j = 0; j < str.length(); j++) {
+
+				if(ch == str.charAt(j)) {
+					count++;
+				}
+
+			}
+			if(count == 1) {
+				System.out.println(ch);
+			}
+
+		}
+
+	}
+}
+
+/*	int arr[]= {11, 12, 10, 17, 18, 20, 19, 11, 17};
+
+		Set<Integer> set= new LinkedHashSet<Integer>();
+
+		for (int i = 0; i < arr.length; i++) {
+
+			set.add(arr[i]);
+
+		}
+		for(int dub: set) {
+			System.out.println(dub);
+		}
+
+	}
+}
+
+/*	int arr[]= {11, 12, 10, 17, 18, 20, 19};
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+
+				if(arr[i]>arr[j]) {
+					int temp= arr[i];
+					arr[i]= arr[j];
+					arr[j]= temp;
+
+				}
+
+			}
+
+		}
+
+		System.out.println(arr[1]);
+
+		//		for (int i = 0; i < arr.length; i++) {
+		//			System.out.println(arr[i]);
+		//		}
+
+	}
+}
+
+//		String str= "abcba";
+//		String rev="";
+//
+//		for(int i= str.length()-1; i >=0; i--) {
+//			rev= rev + str.charAt(i);
+//		}
+//		if(rev.equals(str)) {
+//			System.out.println("it is palindrom");
+//		}
+//		else {
+//			System.out.println("not a palindrom");
+//		}
+//
+//	}
+//}
+
+/*	String str= "sivab";
+		String rev= "";
+
+		for(int i= str.length()-1; i>=0; i--) {
+			rev= rev+ str.charAt(i);
+		}
+		System.out.println("Reverse string " +rev);
+		}
+	}
+	/*	int a=10;
+		int b=20;
+		int c=30;
+
+		a= a+b+c;   //10+20+30 a=60
+		b= a-(b+c);   //60-(20+30) b=10
+		c= a-(b+c);   //60-(10+30) c=20
+		a= a- (b+c);  //60- (10+20)
+
+		System.out.println("After swap a is "+ a);
+		System.out.println("After swap b is "+b);
+		System.out.println("After swap b is "+c);
+
+		}
+	}
+
+//		int num= 1234;
+//		int sum= 0;
+//
+//		while(num >0) {
+//			int rem= num%10;
+//			sum= sum+rem;
+//			num= num/10;
+//		}
+//		
+//		
+//		System.out.println(sum);
+//	}
+//}
+/*	int temp= num;
+
+		while(num > 0) {
+			int rem= num% 10;
+
+			rev= (rev*10)+ rem;
+
+			num= num/10;
+		}
+		System.out.println("reverse of number is " +rev);
+
+		if(temp== rev) {
+			System.out.println("it is palindrom");
+
+		}
+		else {
+			System.out.println("not a palindrom");
+		}
+	}
+}
+
+/*	String str= "Sbalan1895@Gmail.Com";
+
+		int s= 0; int c= 0; int d= 0; int ch=0;
+
+		String small= "", cap="", digit="", splC= "";
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char charAt = str.charAt(i);
+
+			if(Character.isLowerCase(charAt)) {
+				s++;
+				small += charAt;
+			}
+
+			else if(Character.isUpperCase(charAt)) {
+				c++;
+				cap += charAt;
+			}
+			else if(Character.isDigit(charAt)) {
+				d++;
+				digit += charAt;
+			}
+
+			else {
+				ch++;
+				splC += charAt;
+			}
+
+		}
+
+		System.out.println("lowercase characters are " +small);
+		System.out.println("UpperCase characters are " +cap);
+		System.out.println("Digits characters are " +digit);
+		System.out.println("spl characters are " +splC);
+
+	}
+}
+
+/*	String str= "automation";
+
+		char[] ch = str.toCharArray();
+
+		for (char c : ch) {
+
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' ||c == 'u') {
+
+				System.out.println(c);
+
+
+			}
+
+
+		}
+
+
+	}
+}
+
+/*	String str= "sbalan1895@gmail.com";
+
+		int length = str.length();
+
+		System.out.println(length);
+
+
+	}
+}
+
+
+
+// count total words in sentence
+
+/*String str= "learning and revision for interview";
+
+		String[] split = str.split(" ");
+
+		int length = split.length;
+
+		System.out.println(length);
+
+		}
+	}
+
+		//print no.of char in string
+
+	/*	String str= "sbalan1895@gmail.com";
+
+		char[] charArray = str.toCharArray();
+
+		int strL = charArray.length;
+
+
+		System.out.println("Total no.of character in string " +strL);
+
+	}
+}
+
+// print repetative char from string
+
+/*	String str= "sivasba";
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char ch = str.charAt(i);
+
+			if(str.indexOf(ch)!= i) {
+				continue;
+			}
+
+			int count= 0;
+
+			for (int j = 0; j < str.length(); j++) {
+
+				if(str.charAt(j)==ch) {
+					count++;
+				}
+
+			}
+			//					
+			if(count > 1) {
+				//						
+				System.out.println("print duplicates from sivasba " +ch);
+			}
+		}
+		//
+	}
+} */
+
+
+//print non-repetative char
+
+/*	String str= "sivasa";
+
+		String result= "";
+
+		for (int i = 0; i < str.length(); i++) {
+
+			char ch = str.charAt(i);
+
+			if(result.indexOf(ch)== -1) {
+				result = result + ch; 
+			}
+		}
+
+		System.out.println("print non-repeative char from sivasa is " + result );
+
+	}
+} */
+
+
+
+//		String str= "sivasba";
+//
+//		String rsl= "";
+//
+//		for (int i = 0; i < str.length(); i++) {
+//
+//			char charAt = str.charAt(i);
+//
+//			if(rsl.indexOf(charAt)== -1) {
+//
+//				rsl= rsl+ charAt;
+//			}
+//		}
+//		System.out.println("Removed duplicated from string " +rsl);
+//	}
+//}
+
+//		int arr[]= {10, 20, 33, 44, 10, 55, 33};
+//
+//		Set <Integer> set= new LinkedHashSet<Integer>();
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			set.add(arr[i]);
+//
+//		}
+//		System.out.println("Duplicates removed from array "+set);
+//	}
+//}
+
+//		//Print the duplicates from String
+//		
+//		String str= "sivasa";
+//		String result= "";
+//
+//		for (int i = 0; i < str.length(); i++) {
+//
+//			char charA = str.charAt(i);
+//
+//			if(result.indexOf(charA) == -1) {
+//				result= result+charA;
+//			}
+//
+//		}
+//		System.out.println("remove duplicates from string sivasa is " +result);
+//	}
+//
+//}
+
+//		int arr[]= {10, 20, 33, 44, 10, 55, 33};
+//
+//		Set <Integer> set= new LinkedHashSet<Integer>();
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			set.add(arr[i]);
+//
+//		}
+//		
+//		System.out.println("Before duplicate removed ");
+//		
+//		System.out.println("Duplicate removed array ");
+//		
+//		for (Integer integer : set) {
+//			System.out.println(integer);
+//		}
+//
+//	}
+//}
+//
+//		for (int i = 0; i <= 3; i++) {
+//			for (int j = i+1; j <= 3; j++) {
+//
+//				System.out.println("Print inner j " +j);
+//
+//			}
+//
+//			System.out.println("Print first loop i " +i);
+//		}
+//	}
+//
+//}
+
+//	public static void main(String[] args) {
+//
+//		int arr[]= {55, 78, 43, 84, 64, 31, 92};
+//
+//		int min= arr[0];
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			for (int j = i+1; j < arr.length; j++) {
+//
+//				if(arr[i]> arr[j]) {
+//					int temp= arr[i];
+//					arr[i]= arr[j];
+//					arr[j]= temp;
+//				}
+//
+//			}
+//		}
+//		
+//		System.out.println(arr[2]);
+//
+//	}
+//}
 
 //		int arr[]= {55, 78, 43, 84, 64, 31, 92};
 //
