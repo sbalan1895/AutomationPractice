@@ -11,7 +11,10 @@ import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
+<<<<<<< HEAD
 import java.util.Set;
+=======
+>>>>>>> 71bc79de6438b9c41b93ddb2f2199e8a59f8df59
 
 //import java.util.Arrays;
 //import java.util.Collections;
@@ -24,6 +27,7 @@ import java.util.Set;
 public class PracticeTest {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 
 		String str= "sivabsi";
 
@@ -797,6 +801,24 @@ public class PracticeTest {
 //}
 
 ////		Palindrome number
+=======
+		
+		String word= "abcba";
+		String rev= "";
+
+		for(int i= word.length()-1; i>=0; i--) {
+			rev= rev+ word.charAt(i);
+		}
+		System.out.println(rev);
+		if(word.equals(rev)) {
+			System.out.println("word is palindrome");
+		}
+		else {
+			System.out.println("word not a palindrome");
+		}
+	}
+}
+>>>>>>> 71bc79de6438b9c41b93ddb2f2199e8a59f8df59
 //
 //		int num= 12345;
 //		int count=0;

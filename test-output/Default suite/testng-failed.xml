@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.selenium1.WindowsHandle1">
+        <methods>
+          <include name="parentWindow"/>
+          <include name="loginSelenium"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.selenium1.WindowsHandle1 -->
+      <class name="practicetng.LogIn_main">
+        <methods>
+          <include name="selectCustomerAccount"/>
+          <include name="MR_Login_Sucessfully"/>
+          <include name="lauchBrowser"/>
+          <include name="loginMR"/>
+        </methods>
+      </class> <!-- practicetng.LogIn_main -->
+      <class name="com.orangehrm.OrangeHRM">
+        <methods>
+          <include name="logIn"/>
+          <include name="validateINFO"/>
+        </methods>
+      </class> <!-- com.orangehrm.OrangeHRM -->
+      <class name="com.selenium1.SeleniumActions">
+        <methods>
+          <include name="clickActions"/>
+          <include name="doubleClickActions"/>
+          <include name="screenCapture"/>
+          <include name="loginSelenium"/>
+          <include name="contextClk"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.selenium1.SeleniumActions -->
+      <class name="com.orangehrm.FirstTest">
+        <methods>
+          <include name="logIn"/>
+          <include name="lauchBrowser"/>
+        </methods>
+      </class> <!-- com.orangehrm.FirstTest -->
+      <class name="practicetng.PracticeTestNG">
+        <methods>
+          <include name="alertHandles"/>
+          <include name="lauchBrowser"/>
+        </methods>
+      </class> <!-- practicetng.PracticeTestNG -->
+      <class name="com.testbasic.BasicTest">
+        <methods>
+          <include name="adminClk"/>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="loginUser"/>
+        </methods>
+      </class> <!-- com.testbasic.BasicTest -->
+      <class name="practicetng.TestNGClass">
+        <methods>
+          <include name="loginValidation"/>
+          <include name="selectCustomer"/>
+          <include name="browserLaunch"/>
+        </methods>
+      </class> <!-- practicetng.TestNGClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
