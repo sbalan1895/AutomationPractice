@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium1.SeleniumWindows">
+      <class name="com.redbus.RB_Test">
         <methods>
-          <include name="parentWindow"/>
-          <include name="loginSelenium"/>
-          <include name="tearDown"/>
-          <include name="multiWindow"/>
+          <include name="screenShot"/>
+          <include name="logIn_RB"/>
+          <include name="closeRB"/>
         </methods>
-      </class> <!-- com.selenium1.SeleniumWindows -->
+      </class> <!-- com.redbus.RB_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

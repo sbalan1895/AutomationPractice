@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="WindowHandles">
-    <classes>
-      
-    <class name= "com.baseselenium.Base_DemoQA"/>
-    <class name= "com.pomclass.POM_TAB"/>
-    <class name= "com.selenium1.SwitchTab"/>
+<suite name="Suite" parallel="tests" thread-count="5">
+
+    <test name= "WindowHandles">
     
-    </classes>
+    <classes>
+    <class name= "com.baseselenium.BaseHYR"/>
+    <class name= "com.selenium1.SeleniumWindows"/>
+    
+  </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

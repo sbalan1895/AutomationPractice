@@ -23,6 +23,8 @@ public class RB_BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get("https://www.redbus.in/");
+		
+		driver.manage().window().maximize();
 
 	}
 

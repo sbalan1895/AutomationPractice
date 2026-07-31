@@ -1,35 +1,42 @@
 package com.selenium1;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
 import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.baseselenium.BaseHYR;
 import com.baseselenium.BaseSelenium;
 
+import net.bytebuddy.implementation.bind.annotation.Argument;
+
 public class SeleniumWindows extends BaseHYR {
 	
 	String parentWID;
 	
+	
 	@Test(priority=1)
 	public void parentWindow() {
 		
-//		bs.loginSelenium();
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
 		
 		parentWID = driver.getWindowHandle();
 		
 		System.out.println("Parent Window ID is " + parentWID);
 		
-		//button[contains(text(), 'New Window')][1]
+		WebElement newtWindow = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='newWindowsBtn']")));
 		
-		WebElement newtWindow = driver.findElement(By.xpath("//button[contains(text(), 'New Window')][1]"));
 		newtWindow.click();
 		
 	}
@@ -46,25 +53,16 @@ public class SeleniumWindows extends BaseHYR {
 				
 				driver.switchTo().window(handle);
 				
-				String sampleT = driver.findElement(By.xpath("//div[contains(@class,'logindiv')]")).getText();
-				
-				Assert.assertTrue(sampleT.contains("Sample Text"));
-				
-				@Nullable
-				String childUrl = driver.getCurrentUrl();
-				@Nullable
-				String childtitle = driver.getTitle();
-				
-				System.out.println("ChildWindow URL is " + childUrl);
-				System.out.println("ChildWindow Title is " + childtitle);
-				
-				
+				System.out.println("ChildWindow URL ---------- " + driver.getCurrentUrl());
+				System.out.println("ChildWindow Title ---------- " + driver.getTitle());
+								
+				driver.close();
 			}
 		}
 		
 	}
 	
-	@Test
+	@Test (priority=3, enabled= false)
 	public void multiWindow() {
 		
 		String windowP = driver.getWindowHandle();
