@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-31T21:56:18 IST" name="Default suite" finished-at="2026-07-31T21:56:26 IST" duration-ms="7278">
+  <suite started-at="2026-09-03T00:23:11 IST" name="Default suite" finished-at="2026-09-03T00:23:15 IST" duration-ms="3840">
     <groups>
     </groups>
-    <test started-at="2026-07-31T21:56:18 IST" name="Default test" finished-at="2026-07-31T21:56:26 IST" duration-ms="7278">
-      <class name="com.redbus.RB_Test">
-        <test-method is-config="true" signature="logIn_RB()[pri:0, instance:com.redbus.RB_Test@1e800aaa]" started-at="2026-07-31T21:56:18 IST" name="logIn_RB" finished-at="2026-07-31T21:56:21 IST" duration-ms="3049" status="PASS">
+    <test started-at="2026-09-03T00:23:11 IST" name="Default test" finished-at="2026-09-03T00:23:15 IST" duration-ms="3840">
+      <class name="com.selenium1.AlertCodekru">
+        <test-method is-config="true" signature="loginCodekru()[pri:0, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:11 IST" name="loginCodekru" finished-at="2026-09-03T00:23:14 IST" duration-ms="2497" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn_RB -->
-        <test-method signature="validateRedBus()[pri:1, instance:com.redbus.RB_Test@1e800aaa]" started-at="2026-07-31T21:56:21 IST" name="validateRedBus" finished-at="2026-07-31T21:56:22 IST" duration-ms="136" status="PASS">
+        </test-method> <!-- loginCodekru -->
+        <test-method signature="SmplA()[pri:1, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:14 IST" name="SmplA" finished-at="2026-09-03T00:23:14 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateRedBus -->
-        <test-method signature="searchBus()[pri:2, instance:com.redbus.RB_Test@1e800aaa]" started-at="2026-07-31T21:56:22 IST" name="searchBus" finished-at="2026-07-31T21:56:25 IST" duration-ms="3409" status="PASS">
+        </test-method> <!-- SmplA -->
+        <test-method signature="cnfrmAlt()[pri:2, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:14 IST" name="cnfrmAlt" finished-at="2026-09-03T00:23:14 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchBus -->
-        <test-method signature="screenShot()[pri:3, instance:com.redbus.RB_Test@1e800aaa]" started-at="2026-07-31T21:56:25 IST" name="screenShot" finished-at="2026-07-31T21:56:25 IST" duration-ms="363" status="PASS">
+        </test-method> <!-- cnfrmAlt -->
+        <test-method signature="prmptAl()[pri:3, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:14 IST" name="prmptAl" finished-at="2026-09-03T00:23:14 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method is-config="true" signature="closeRB()[pri:0, instance:com.redbus.RB_Test@1e800aaa]" started-at="2026-07-31T21:56:25 IST" name="closeRB" finished-at="2026-07-31T21:56:26 IST" duration-ms="247" status="PASS">
+        </test-method> <!-- prmptAl -->
+        <test-method signature="OpenModal()[pri:4, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:14 IST" name="OpenModal" finished-at="2026-09-03T00:23:15 IST" duration-ms="712" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeRB -->
-      </class> <!-- com.redbus.RB_Test -->
+        </test-method> <!-- OpenModal -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium1.AlertCodekru@1e800aaa]" started-at="2026-09-03T00:23:15 IST" name="tearDown" finished-at="2026-09-03T00:23:15 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium1.AlertCodekru -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

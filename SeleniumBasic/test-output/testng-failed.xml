@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.redbus.RB_Test">
+      <class name="com.selenium1.AlertCodekru">
         <methods>
-          <include name="screenShot"/>
-          <include name="logIn_RB"/>
-          <include name="closeRB"/>
+          <include name="loginCodekru"/>
+          <include name="tearDown"/>
+          <include name="prmptAl"/>
         </methods>
-      </class> <!-- com.redbus.RB_Test -->
+      </class> <!-- com.selenium1.AlertCodekru -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
