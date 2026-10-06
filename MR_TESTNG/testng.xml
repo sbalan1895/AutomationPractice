@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <suite name="MR login using TestNG">
 
 	<test name="Login MR website">
@@ -11,4 +12,19 @@
 		
 	</test>
 
+=======
+<suite name="MR login using TestNG">
+
+	<test name="Login MR website">
+		<parameter name="userID" value="preproduser" />
+		<parameter name="pass" value="tele_123" />
+
+		<classes>
+			<class name="com.practicetng.LogIn_main">
+			</class>
+		</classes>
+		
+	</test>
+
+>>>>>>> 2dc59acdbce16efba77754286705404a5e54a24f
 </suite>

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2026/10/06-14:41:21.350 3acc Reusing MANIFEST C:\Users\sivabalan\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
 2026/10/06-14:41:21.351 3acc Recovering log #3
 2026/10/06-14:41:21.352 3acc Reusing old log C:\Users\sivabalan\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/000003.log 
+=======
+2026/09/04-19:44:52.468 1be4 Reusing MANIFEST C:\Users\admin\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2026/09/04-19:44:52.468 1be4 Recovering log #3
+2026/09/04-19:44:52.469 1be4 Reusing old log C:\Users\admin\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\shared_proto_db\metadata/000003.log 
+>>>>>>> 2dc59acdbce16efba77754286705404a5e54a24f
