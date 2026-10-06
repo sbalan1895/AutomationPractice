@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="MR Login">
+	<test name="Testing @MR Login">
+
+		<parameter name="userID" value="preproduser" />
+		<parameter name="pass" value="tele_123" />
+		<parameter name="company" value="Envision" />
+
+		<classes>
+			<class name="practicetng.LogIn_main">
+				<methods>
+					<include name="loginMR" />
+					<include name= "selectCustomerAccount" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
