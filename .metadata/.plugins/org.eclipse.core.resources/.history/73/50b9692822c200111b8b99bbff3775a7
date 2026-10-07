@@ -1,0 +1,15 @@
+package com.utilitytest;
+
+import org.testng.annotations.Test;
+
+public class CandidateRegister {
+	
+	
+	
+	@Test
+	public void clkRegister() {
+		
+	}
+	
+
+}

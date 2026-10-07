@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.testng.eclipse.launchconfig">
-    <stringAttribute key="org.eclipse.debug.core.terminate.timestamp" value="1791275630797"/>
+    <stringAttribute key="org.eclipse.debug.core.terminate.timestamp" value="1791379254726"/>
     <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="DemoProject_0510"/>

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<<<<<<< HEAD
     <libraryInfo home="C:\Users\sivabalan\Downloads\eclipse-java-2026-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822" version="25.0.4.1">
-=======
-    <libraryInfo home="C:\Program Files\Java\jdk-17.0.19" version="17.0.19"/>
-    <libraryInfo home="C:\Users\admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531\jre" version="21.0.11"/>
-    <libraryInfo home="C:\Users\admin\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.11.v20260515-1531" version="21.0.11">
->>>>>>> 2dc59acdbce16efba77754286705404a5e54a24f
         <bootpath>
             <entry path="null"/>
         </bootpath>
@@ -17,10 +11,6 @@
             <entry path="null"/>
         </endorsedDirs>
     </libraryInfo>
-<<<<<<< HEAD
     <libraryInfo home="C:\Users\sivabalan\Downloads\eclipse-java-2026-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_25.0.4.v20260826-0822\jre" version="25.0.4.1"/>
     <libraryInfo home="C:\Program Files\Java\jdk-21.0.12.1" version="21.0.12.1"/>
-=======
-    <libraryInfo home="C:\Program Files\Java\jdk-21.0.12" version="21.0.12"/>
->>>>>>> 2dc59acdbce16efba77754286705404a5e54a24f
 </libraryInfos>
