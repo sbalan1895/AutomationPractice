@@ -1263,3 +1263,14 @@
 {"logTime": "1011/115228", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
 {"logTime": "1011/132500", "level": "INFO", "message": "Preference changed: name=signin.account_preview_data_last_update, new_value=\"13436198700205750\", source=unknown"}
 {"logTime": "1011/132510", "level": "INFO", "message": "PrefStore write completed: store=4, success=true"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=language_dwell_time_average, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=language_usage_count, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.site_engagement, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=profile.last_engagement_time, new_value=\"13436240614168491\", source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=sessions.event_log, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=language_dwell_time_average, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=language_usage_count, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=profile.content_settings.exceptions.media_engagement, new_value=[object], source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=2, source=unknown"}
+{"logTime": "1012/090334", "level": "INFO", "message": "Preference changed: name=sessions.session_data_status, new_value=3, source=unknown"}
