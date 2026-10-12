@@ -1,15 +1,25 @@
 package com.baseclass;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.commons.io.FileUtils;
 import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
@@ -64,7 +74,7 @@ public class Base_Demo {
 
 	}
 
-	@Test(priority= 2)
+	@Test(priority= 3)
 	public void enterCredential() {
 
 		@NonNull
@@ -110,10 +120,9 @@ public class Base_Demo {
 
 		}
 
-		//Final school login
 	}
 
-	@Test(priority= 3)
+	@Test(priority= 4)
 	public void validateHome() {
 
 		WebElement dashboard = waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(text(), 'Dashboard')]")));
@@ -125,28 +134,119 @@ public class Base_Demo {
 
 			System.out.println("Logged in register for school is " +userName);
 
-			//span[contains(text(), 'Hi Sivabalan Test !')]
-			//div//span[@class='name']
 		}
 
 	}
 
-	@Test(priority= 4)
+	@Test(enabled= false)
 	public void closeSchool() {
-		
-		//span[@id='BtnDropdownArrow']
-		
+
 		WebElement clkSelect = waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@id='BtnDropdownArrow']")));
 		clkSelect.click();
 
-		//div[@id='profileDropdown']
-		//button[@class='btn btn-empty p-0 d-flex justify-content-start']
-		
 		WebElement clkLogout = waits.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='btn btn-empty p-0 d-flex justify-content-start']")));
 		clkLogout.click();
-		
-		
-//		driver.close();
 	}
 
+	@Test(priority= 5)
+	public void getTotalJobCount() {
+		WebElement totalJobC = waits.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"stat-body\"]//a[.//div[contains(text(),'Total jobs')]]//div[1]")));
+		String tJobv= totalJobC.getText();
+		System.out.println("----Total job value is " +tJobv +"----");
+
+	}
+
+	@Test(priority= 6)
+	public void getActiveJobCount() {
+		WebElement actJobC = waits.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"stat-body\"]//a[.//div[contains(text(),'Active Jobs')]]//div[1]")));
+		String aJobv= actJobC.getText();
+		System.out.println("----Total job value is " +aJobv +"----");
+
+	}
+
+	@Test(priority= 5)
+	public void getAppilcationsCount() {
+		WebElement applC = waits.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class=\"stat-body\"]//a[.//div[contains(text(),'Applications')]]//div[1]")));
+		String applicC= applC.getText();
+		System.out.println("----Total job value is " +applicC +"----");
+
+	}
+
+	@Test(priority= 2)
+	public void handleCookiesPoup() {
+
+		@NonNull
+		@Nullable
+		WebElement chPop = waits.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(text(),'Reject All')]")));
+		try {
+			if(chPop.isDisplayed()) {
+
+				Actions act= new Actions(driver);
+				act.moveToElement(chPop).click().build().perform();
+
+				System.out.println("Cookies constent banner dismissed using RejectAll");
+			}
+		}
+		catch(StaleElementReferenceException | ElementClickInterceptedException e ) {
+			
+			System.out.println(
+	                "Cookie banner interaction was interrupted: "
+	                + e.getClass().getSimpleName());
+			
+			throw e;
+		}
+		//		chPop.isDisplayed();
+
+	}
+
+	//div[@class="stat-body"]//a[.//div[contains(text(),'Total jobs')]]
+
+	//div[@class="stat-body"]//a[.//div[contains(text(),'Total jobs')]]//div[1]
+
+
+	//button[@aria-label='Close']
+	//button[contains(text(),'Reject All')]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	@AfterMethod
+	public void takeScreenshots() throws IOException {
+
+		String screenshotName= "Screenshot_" + System.currentTimeMillis() + ".png";
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
+
+		File source = ts.getScreenshotAs(OutputType.FILE);
+
+		File destination= new File(System.getProperty("user.dir")+ "\\Screenshots\\" +screenshotName);
+
+		FileUtils.copyFile(source, destination);
+
+	}
 }
